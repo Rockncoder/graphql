@@ -1,12 +1,13 @@
 
 const express = require('express');
 const graphqlHTTP = require('express-graphql');
+const schema = require('./schema');
 
 const app = express();
 
 // middleware
 app.use('/graphql', graphqlHTTP({
-
+  schema
 }));
 
 // TODO: fix this hardcoded port
