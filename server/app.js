@@ -7,7 +7,8 @@ const app = express();
 
 // middleware
 app.use('/graphql', graphqlHTTP({
-  schema
+  schema,
+  graphiql: true
 }));
 
 // TODO: fix this hardcoded port
