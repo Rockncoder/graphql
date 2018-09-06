@@ -9,15 +9,28 @@ const getBooksQuery = gql`
     id
   }
 }
-`
+`;
 
 class BookList extends Component {
+  displayBooks() {
+    const data = this.props.data;
+    console.log(data);
+    if (data.loading) {
+      return (<div>Loading...</div>);
+    } else {
+      return data.books.map(book => {
+        return (
+          <li>{book.name}</li>
+        );
+      });
+    }
+  }
+
   render() {
-    console.log(this.props);
     return (
       <div>
         <ul id="book-list">
-          <li>book name here</li>
+          {this.displayBooks()}
         </ul>
       </div>
     );
