@@ -1,0 +1,50 @@
+# Terry
+mutation {
+  addBook(name: "The Long Earth", genre: "Sci-Fi", authorId: ) {
+    name
+    genre
+    id
+  }
+}
+
+mutation {
+  addBook(name: "The Colour of Magic", genre: "Fantasy", authorId: ) {
+    name
+    genre
+    id
+  }
+}
+
+mutation {
+  addBook(name: "The Light Fantastic", genre: "Fantasy", authorId: ) {
+    name
+    genre
+    id
+  }
+}
+
+# Brandon
+mutation {
+  addBook(name: "The Final Empire", genre: "Fantasy", authorId: ) {
+    name
+    genre
+    id
+  }
+}
+
+mutation {
+  addBook(name: "The Hero of Ages", genre: "Fantasy", authorId: ) {
+    name
+    genre
+    id
+  }
+}
+
+# Patrick
+mutation {
+  addBook(name: "The Name of the Wind", genre: "Fantasy", authorId: ) {
+    name
+    genre
+    id
+  }
+}

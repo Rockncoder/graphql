@@ -1,0 +1,23 @@
+mutation {
+  addAuthor(name: "Patrick Rothfuss", age: 44) {
+    name
+    age
+    id
+  }
+}
+
+mutation {
+  addAuthor(name: "Brandon Sanderson", age: 42) {
+    name
+    age
+    id
+  }
+}
+
+mutation {
+  addAuthor(name: "Terry Pratchett", age: 66) {
+    name
+    age
+    id
+  }
+}
